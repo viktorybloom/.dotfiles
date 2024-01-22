@@ -12,8 +12,8 @@ To connect secondary display, to the right of primary, run (for example):
 
 ### Touchpad natural scrolling
 `sudo vim` `/usr/share/X11/xorg.conf.d/40-libinput.conf` and add `Option "NaturalScrolling" "True"` to touchpad section to look like: 
-``
-`Section "InputClass"
+```
+Section "InputClass"
         Identifier "libinput touchpad catchall"
         MatchIsTouchpad "on"
         MatchDevicePath "/dev/input/event*"
