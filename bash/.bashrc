@@ -7,7 +7,7 @@ case $- in
 esac
 
 # Uncomment the following line for a colored prompt, if the terminal has the capability.
-# force_color_prompt=yes
+ force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -39,9 +39,15 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -alF --color=auto'
+alias l='ls -A --color=auto'
+#alias l='ls -CF --color=auto'
+
+alias ..='cd ..'
+alias ~='cd ~'
+/() {
+  cd /
+}
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -51,4 +57,5 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
-
+# Enable autocorrect
+shopt -s cdspell
