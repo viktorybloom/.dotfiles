@@ -60,3 +60,7 @@ bind '"\e[B": history-search-forward'
 
 # Enable autocorrect
 shopt -s cdspell
+
+# tab completion irrespective of case sensitivity
+bind 'set completion-ignore-case on'
+
