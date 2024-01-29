@@ -43,11 +43,9 @@ alias ll='ls -alF --color=auto'
 alias l='ls -A --color=auto'
 #alias l='ls -CF --color=auto'
 
-alias ..='cd ..'
-alias ~='cd ~'
-/() {
-  cd /
-}
+#alias ..='cd ..'
+#alias ~='cd ~'
+#/() {  cd /}
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
