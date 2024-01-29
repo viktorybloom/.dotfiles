@@ -38,7 +38,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
 alias ll='ls -alF --color=auto'
 alias l='ls -A --color=auto'
 #alias l='ls -CF --color=auto'
@@ -46,6 +45,10 @@ alias l='ls -A --color=auto'
 #alias ..='cd ..'
 #alias ~='cd ~'
 #/() {  cd /}
+
+# application aliasi
+alias vim='nvim'
+alias vi='nvim'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
