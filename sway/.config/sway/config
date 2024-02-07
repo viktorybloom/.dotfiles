@@ -1,7 +1,7 @@
 include ./workspace.conf
-include ./config.d/*
 include ./theme.conf
 include ./actions.conf
+include ./misc/*
 
 # Autotiling - AUR autotiling
 exec_always autotiling
