@@ -2,11 +2,11 @@
 size = 11
 
 [font.bold]
-family = "Victor Mono Nerd Font"
+family = "VictorMono Nerd Font"
 style = "Bold"
 
 [font.bold_italic]
-family = "Victor Mono Nerd Font"
+family = "VictorMono Nerd Font"
 style = "Bold Italic"
 
 [font.glyph_offset]
@@ -14,11 +14,11 @@ x = 0
 y = 0
 
 [font.italic]
-family = "Victor Mono Nerd Font"
+family = "VictorMono Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "Victor Mono Nerd Font"
+family = "VictorMono Nerd Font"
 style = "Regular"
 
 [font.offset]
