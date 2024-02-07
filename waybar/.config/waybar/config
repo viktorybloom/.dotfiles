@@ -24,9 +24,9 @@
         //"keyboard-state",
         //"battery",
         //"battery#bat2",
-        "clock"
+        "clock",
         //"custom/bluetooth",
-        //"custom/power"
+        "custom/power"
     ],
 
     "keyboard-state": {
@@ -149,8 +149,8 @@
         "on-click-right": "pavucontrol"
     },
     "custom/power": {
-        "format-icons": "⏻",
-        "exec": "~/.config/wofi/scripts/wofi-powermenu.sh",
+        "format": "⏻",
+        "on-click": "exec ~/.config/sway/scripts/powermenu.sh",
 	"escape": true,
 
     },

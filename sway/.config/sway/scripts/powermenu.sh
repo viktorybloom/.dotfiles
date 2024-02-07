@@ -1,13 +1,28 @@
 #!/bin/bash
 
-entries="Logout\nSuspend\nReboot\nShutdown"
+lock_file="/tmp/wofi_lock"
 
-selected=$(echo -e $entries | wofi --width 250 --height 250 --dmenu \
+if [ -e "$lock_file" ]; then
+  echo "wofi is already running. Exiting."
+  exit 1
+fi
+
+# Create lock file
+touch "$lock_file"
+
+entries="⇠ Logout\n⏾ Suspend\n⭮ Reboot\n⏻ Shutdown"
+
+selected=$(echo -e "$entries" | wofi --width 250 --height 240 --dmenu \
   --cache-file /dev/null \
-  --font "VictorMono Nerd Font 16" \
-  --padding 10 \
-  --lines 6 \
-  | awk '{print tolower($2)}')
+  --font "VictorMono Nerd Font 10" \
+  --padding 20 \
+  --lines 6 | awk '{print tolower($2)}')
+
+# Delay for two seconds
+sleep 2
+
+# Remove lock file
+rm "$lock_file"
 
 case $selected in
   logout)
