@@ -1,14 +1,18 @@
 #!/bin/bash
  
-entries="Active Screen Output Area Window"
+entries="\ueb89  Active\n\ueb4c  Screen\n\uf061  Output\n\uf1fe  Area\n\ueb7f  Window"
  
-selected=$(printf '%s\n' $entries | wofi --style=~/.config/wofi/style.widgets.css --conf=~/.config/wofi/config.screenshot | awk '{print tolower($1)}')
- 
+selected=$(echo -e "$entries" | wofi --width 200 --height 240 --dmenu \
+  --cache-file /dev/null \
+  --font "VictorMono Nerd Font 10" \
+  --padding 20 \
+  --lines 7 | awk '{print tolower($2)}')
+
 case $selected in
   active)
     ~/.config/sway/scripts/grimshot --notify save active;;
   screen)
-   ~/.config/sway/scripts/grimshot --notify save screen;;
+    ~/.config/sway/scripts/grimshot --notify save screen;;
   output)
     ~/.config/sway/scripts/grimshot --notify save output;;
   area)

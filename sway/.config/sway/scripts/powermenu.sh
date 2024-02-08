@@ -10,13 +10,13 @@ fi
 # Create lock file
 touch "$lock_file"
 
-entries="⇠ Logout\n⏾ Suspend\n⭮ Reboot\n⏻ Shutdown"
+entries="\uf023  Logout\n\uf4ee  Suspend\n\uf2dc  Hibernate\n\uead2  Reboot\n\u23fb  Shutdown"
 
-selected=$(echo -e "$entries" | wofi --width 250 --height 240 --dmenu \
+selected=$(echo -e "$entries" | wofi --width 200 --height 240 --dmenu \
   --cache-file /dev/null \
   --font "VictorMono Nerd Font 10" \
   --padding 20 \
-  --lines 6 | awk '{print tolower($2)}')
+  --lines 7 | awk '{print tolower($2)}')
 
 # Delay for two seconds
 sleep 2
@@ -29,6 +29,8 @@ case $selected in
     pkill -u kia;;
   suspend)
     exec systemctl suspend;;
+  hibernate)
+    exec systemctl hibernate;;
   reboot)
     exec systemctl reboot;;
   shutdown)
