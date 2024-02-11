@@ -3,7 +3,7 @@
 swayidle -w \
         timeout 600 'swaymsg "output * power off"' \
             resume 'swaymsg "output * power on"' & 
-        before-sleep 'swaylock -C ~/.config/swaylock/config \'
+        before-sleep 'swaylock -C ~/.config/swaylock/config'
 
 # Locks the screen immediately
 swaylock -C ~/.config/swaylock/config
