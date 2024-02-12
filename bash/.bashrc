@@ -64,3 +64,19 @@ shopt -s cdspell
 # tab completion irrespective of case sensitivity
 bind 'set completion-ignore-case on'
 
+
+# Function to be executed when changing directories
+auto_ls() {
+    ls -A "$1"
+}
+# Function to be called before changing directories
+cd() {
+    # Call the original cd command
+    builtin cd "$1"
+    
+    # Run auto_ls after changing directories
+    auto_ls "$(pwd)"
+}
+
+
+
