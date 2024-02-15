@@ -18,8 +18,8 @@ fade-in=2
 
 # Effect for background
 effect-blur=5x2
-# effect-greyscale
-# effect-pixelate=5
+effect-greyscale
+#effect-pixelate=10
 
 # Show/Hide indicator circle
 indicator
