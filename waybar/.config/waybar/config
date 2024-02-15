@@ -8,7 +8,8 @@
         "custom/launcher",
 	"custom/terminal",
 	"custom/firefox",
-	"custom/files",
+	//"custom/files",
+        "custom/telegram",
         "sway/workspaces",
         "sway/mode",
         "sway/scratchpad"
@@ -181,6 +182,11 @@
         "custom/firefox": {
         "format": " ",
         "on-click": "exec firefox",
+        "tooltip": false
+    },
+        "custom/telegram": {
+        "format": " ",
+        "on-click": "exec telegram-desktop",
         "tooltip": false
     },
     "custom/terminal": {
