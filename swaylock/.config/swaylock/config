@@ -1,23 +1,23 @@
 ####
 
 ignore-empty-password
-font="VictorMono Nerd Font"
+font="UbuntuMono Nerd Font"
 
 clock
 timestr=%R
 datestr=%a, %e of %B
 
 # Add current screenshot as wallpaper.Script in sway/scripts/lock.sh
-screenshots
+#screenshots
 
 # Add an image as a background 
-# image=~/.dotfiles/wallpaper/wallpaper.jpg
+image=~/.dotfiles/wallpaper/wallpaper.jpg
 
 # Fade in time
 fade-in=2
 
 # Effect for background
-effect-blur=5x2
+#effect-blur=5x2
 effect-greyscale
 #effect-pixelate=10
 
