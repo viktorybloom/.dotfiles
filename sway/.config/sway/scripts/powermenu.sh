@@ -10,7 +10,7 @@ fi
 # Create lock file
 touch "$lock_file"
 
-entries="\uf023  Logout\n\uf4ee  Suspend\n\uead2  Reboot\n\u23fb  Poweroff"
+entries="\uf023  Logout\n\uf4ee  Hibernate\n\uead2  Reboot\n\u23fb  Poweroff"
 
 selected=$(echo -e "$entries" | wofi --width 200 --height 240 --dmenu \
   --cache-file /dev/null \
@@ -28,7 +28,7 @@ case $selected in
   logout)
     swaymsg exit;;
   suspend)
-    exec systemctl suspend;;
+    exec systemctl hibernate;;
   reboot)
     exec systemctl reboot;;
   shutdown)
