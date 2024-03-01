@@ -4,7 +4,7 @@ entries="\ueb89  Active\n\ueb4c  Screen\n\uf061  Output\n\uf1fe  Area\n\ueb7f  W
  
 selected=$(echo -e "$entries" | wofi --width 200 --height 240 --dmenu \
   --cache-file /dev/null \
-  --font "VictorMono Nerd Font 10" \
+  --font "UbuntuMono Nerd Font 10" \
   --padding 20 \
   --lines 7 | awk '{print tolower($2)}')
 

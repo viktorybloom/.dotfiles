@@ -6,6 +6,6 @@ swayidle -w \
 
 swaylock -C ~/.config/swaylock/config
 
-kill%%
+#kill%%
 
 
