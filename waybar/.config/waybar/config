@@ -6,10 +6,10 @@
 
     "modules-left": [
         "custom/launcher",
-	"custom/terminal",
-	"custom/firefox",
+	//"custom/terminal",
+	//"custom/firefox",
 	//"custom/files",
-        "custom/telegram",
+        //"custom/telegram",
         "sway/workspaces",
         "sway/mode",
         "sway/scratchpad"
