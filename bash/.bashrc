@@ -66,17 +66,17 @@ bind 'set completion-ignore-case on'
 
 
 # Function to be executed when changing directories
-auto_ls() {
-    ls -A "$1"
-}
+#auto_ls() {
+#    ls -A "$1"
+#}
 # Function to be called before changing directories
-cd() {
+#cd() {
     # Call the original cd command
-    builtin cd "$1"
+#    builtin cd "$1"
     
     # Run auto_ls after changing directories
-    auto_ls "$(pwd)"
-}
+#    auto_ls "$(pwd)"
+#}
 
 
 
