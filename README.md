@@ -10,4 +10,12 @@ To fix this, run `eval "$(ssh-agent -s)" \ ssh-add ~/.ssh/id_rsa`.
 This setup assumes a base Arch distro install - Currently working with SwayWM and LY greeter. 
 Reminder: edit `arch` script to stow the folders you are after. This will run `install`. 
 For uninstall, run `./uninstall`
- 
+
+### Desktop
+
+![Desktop Screenshot](./misc/Desktop.png)
+
+### Tiling
+
+![Tiling Screenshot](./misc/Tiling.png)
+
