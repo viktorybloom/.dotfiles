@@ -27,7 +27,7 @@
         //"temperature",
         //"backlight",
         //"keyboard-state",
-        //"battery",
+        "battery",
         //"battery#bat2",
         "clock",
         //"custom/bluetooth",
