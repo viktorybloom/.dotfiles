@@ -11,7 +11,7 @@ datestr=%a, %e of %B
 #screenshots
 
 # Add an image as a background 
-image=~/.dotfiles/wallpaper/wallpaper.jpg
+image=~/.dotfiles/wallpaper/fujinight.jpg
 
 # Fade in time
 fade-in=2
