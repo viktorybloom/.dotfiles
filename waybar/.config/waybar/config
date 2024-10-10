@@ -29,9 +29,9 @@
         //"keyboard-state",
         "battery",
         //"battery#bat2",
-        "clock",
+        "clock"
         //"custom/bluetooth",
-        "custom/power"
+        //"custom/power"
     ],
 
     "keyboard-state": {
@@ -114,8 +114,8 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
+        "format-charging": "charging {capacity}% ",
+        "format-plugged": "capacity {capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
