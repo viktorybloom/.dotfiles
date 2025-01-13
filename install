@@ -1,6 +1,8 @@
 #!/usr/bin/env zsh
 # I am using zsh instead of bash.  I was having some troubles using bash
 
+rm ~/.bashrc
+
 pushd $DOTFILES
 for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
 do
