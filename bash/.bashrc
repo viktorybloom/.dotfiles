@@ -49,6 +49,7 @@ alias l='ls -A --color=auto'
 # application aliasi
 alias vim='nvim'
 alias vi='nvim'
+alias nv='nvim'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
