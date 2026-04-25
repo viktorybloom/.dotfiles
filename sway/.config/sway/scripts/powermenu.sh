@@ -14,7 +14,7 @@ entries="\uf023  Logout\n\uf4ee  Suspend\n\uead2  Reboot\n\u23fb  Poweroff"
 
 selected=$(echo -e "$entries" | wofi --width 200 --height 240 --dmenu \
   --cache-file /dev/null \
-  --font "UbuntuMono Nerd Font 10" \
+  --font "UbuntuMono Nerd Font 20" \
   --padding 20 \
   --lines 6 | awk '{print tolower($2)}')
 
