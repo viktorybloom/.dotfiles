@@ -1,5 +1,5 @@
 background = 000000
-background-opacity = 0.85
+background-opacity = 1
 background-blur = false
 confirm-close-surface=false
 font-family = "UbuntuMono Nerd Font"
